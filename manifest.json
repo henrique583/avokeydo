@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "keyloo",
+  "name": "keylog",
   "version": "1.3",
   "description": "Tracks keystrokes and displays live WPM.",
   "permissions": ["scripting", "activeTab", "storage"],
@@ -13,7 +13,7 @@
   ],
   "action": {
     "default_popup": "popup.html",
-    "default_icon": "images/iconn.png"
+    "default_icon": "you-shoulda-said-pwease-v0-lv10cmgqq6me1.png"
   },
   "background": {
     "service_worker": "background.js"
