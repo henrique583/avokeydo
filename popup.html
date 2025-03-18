@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>keylog</title>
-  <script src="popup.js"></script>
-  <script></script>
-</head>
-<body>
-  <h1>keylog</h1>
-  <h2>you shoulda said pwease</h2>
-  <img style="width: 100px;" src="you-shoulda-said-pwease-v0-lv10cmgqq6me1.png" alt="">
-  <button id="clear">Clear Keystrokes</button>
-  <pre id="keystrokes">Loading keystrokes...</pre>
-</body>
+  <head>
+    <title>avokeydo</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <h2>avokeydo</h2>
+
+    <!-- Tabs -->
+    <div class="tab-buttons">
+      <button id="tab-logger">Keystrokes</button>
+      <button id="tab-metrics">Metrics</button>
+    </div>
+
+    <!-- Logger Tab -->
+    <div id="logger-tab" class="tab">
+      <p id="wpm-display">Current WPM: 0</p>
+      <button id="toggle-wpm">Hide WPM Overlay</button>
+      <button id="clear">Clear Keystrokes</button>
+      <pre id="keystrokes">Loading keystrokes...</pre>
+    </div>
+
+    <!-- Metrics Tab -->
+    <div id="metrics-tab" class="tab" style="display: none;">
+      <pre id="metrics-display">Loading metrics...</pre>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
 </html>
